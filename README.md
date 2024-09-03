@@ -13,3 +13,6 @@
  3. Deploy the app by following [this steps](https://firebase.google.com/docs/hosting/multisites?hl=en)
   
 ## Some snapshots of the app
+
+![Try out interface](./media/tryout.png "Try out interface")
+![Try out interface](./media/comfort.png)
