@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Part 5</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="../media/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="../styles/test.css" />
+</head>
+
+<body>
+  <h1> Test 0 </h1>
+  
+  <div class="test-section">
+
+    <div class="player" id="0">
+      <div class="name" id="reference-name">
+        Reference
+      </div>
+      <div class="slider-0">
+        <div class="sliderticks">
+          <div><b><em>Nothing Changed (0)</em></b></div>
+          <div><b><em>Effect clearly felt (5)</em></b></div>
+          <div><b><em>Effect very severe (10)</em></b></div>
+        </div>
+        <div class="range"> 
+          <input type="range" min="0" max="10" value="0" step="1" list="values" disabled/>
+        </div>
+      </div>
+      <div class="value">
+        Value always =  0
+      </div>
+    </div>
+
+    <div class="player" id="1">
+      <div class="name">
+        Sample #1
+      </div>
+      <div class="slider">
+        <input type="range" min="0" max="10" value="0" step="1" list="values"/>
+      </div>
+      <div class="value" id="value-1">
+        Actual Value: 0
+      </div>
+    </div>
+
+    <div class="player" id="2">
+      <div class="name" id=>
+        Sample #2
+      </div>
+      <div class="slider">
+        <input type="range" min="0" max="10" value="0" step="1" list="values"/>
+      </div>
+      <div class="value">
+        Actual Value: 0
+      </div>
+    </div>
+
+    <div class="player" id="3">
+      <div class="name">
+        Sample #3
+      </div>
+      <div class="slider">
+        <input type="range" min="0" max="10" value="0" step="1" list="values"/>
+      </div>
+      <div class="value" id="value-3">
+        Actual Value: 0
+      </div>
+      
+      </div>
+
+    <div class="player" id="4">
+      <div class="name">
+        Sample #4
+      </div>
+      <div class="slider">
+        <input type="range" min="0" max="10" value="0" step="1" list="values"/>
+      </div>
+      <div class="value">
+        Actual Value: 0
+      </div>
+    </div>
+
+    <div class="player" id="5">
+      <div class="name">
+        Sample #5
+      </div>
+      <div class="slider">
+        <input type="range" min="0" max="10" value="0" step="1" list="values"/>
+      </div>
+      <div class="value">
+        Actual Value: 0
+      </div>
+    </div>
+
+    <div class="player" id="6">
+      <div class="name">
+        Sample #6
+      </div>
+      <div class="slider">
+        <input type="range" min="0" max="10" value="0" step="1" list="values"/>
+      </div>
+      <div class="value">
+        Actual Value: 0
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="submit" >
+    <button class="button"> Submit Test</button>
+    <a class="button hidden" id="submit"> Submit Test </a>
+  </div>
+
+  <div class="guide">
+    <div class="guide-box">
+      <h3> What to evaluate?</h3>
+      <div class="guide-content">
+      <p>Evaluate <b><em>the pressurised feeling in your ear (e.g like when you are in an ascending/descending airplane) on a scale from 0-10</em></b> when you are listening to the samples. Pressurised here <b><em>can also be described informally as feeling your ear being blocked, clogged or muffled</em></b></p>
+        <ul>
+              <li class="text"> <b>0</b>: you feel nothing.</li>
+              <li class="text"> <b>below 5</b>: You <b><em>feel something</em></b>, but you are <b><em>not sure if it is the sensation being described.</em></b></li>
+              <li class="text"> <b>5</b>: You <b><em>feel this sensation clearly.</em></b></li>
+              <li class="text"> <b>10</b>: The pressurised feeling is <b><em>very severe and uncomfortable, I feel like I need to swallow like in an ascending airplane.</em></b></li>
+        </ul>
+      </div>
+    </div> 
+    <div class="guide-box">
+      <h3>How to interact with the interface?</h3>
+      <div class="guide-content">
+        <ul>
+          <li class="text"> <b><em>Use the number keys on your keyboard (0 - maximum number of samples) to select a sample.</em></b></li>
+          <li class="text"> <b><em>key number 0 corresponds to the reference sample</em></b>, which always have an evaluation of 0.</li>
+          <li class="text"> <b><em>After you've chosen a sample, the corresponding audio will be played and looped</em></b> (replayed automatically after it ends), the corresponding label will changed color so you can keep track of what you are listening to.</li>
+          <li class="text"> You can <b><em>only control the slider corresponding to the audio you are listening to.</em></b></li>
+          <li class="text"> You can <b><em>only use the arrow up and arrow down key on your keyboard to move the slider.</em></b></li>
+        </ul>
+      </div>
+    </div>
+    <div class="guide-box">
+      <h3>How to compare between samples?</h3>
+      <div class="guide-content">
+        <p>
+          Supposed you've <b><em>listened to Sample #1</em></b> and <b><em>your first impression</em></b> is to give it <b><em>an evaluation of 7.</em></b>  Then you <b><em>listen to sample #2</em></b> and you <b><em>feel that the effect in sample #2</em></b> is <b><em>way more obvious</em></b> and <b><em>maybe that should be a 7</em></b>, 
+          you should then <b><em>switch back-and-fourth between 1 and 2 to assign each an appropriate value. Repeat this process to each new samples</em></b> that you hear to get a more correct impression instead of relying solely on your first impression.
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script type="module" src="../firebase.js"></script>
+  <script type="module" src="../transition.js" charset="utf-8"></script>
+</body>
+
+</html>

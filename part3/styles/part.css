@@ -1,0 +1,116 @@
+body {
+    text-align: left;
+    background-color: #e4f0f7;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1rem;
+    color: #112D4E;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #9DB6CF;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    margin-top: 0.5em;
+}
+  
+.body {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container {
+    padding-left: 2rem;
+    padding-right: 2.5rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container > ul > li{
+    margin: 1rem;
+    font-size: 1.1rem;
+}
+
+.button {
+    border-radius: 0.5rem;
+    width: 20%;
+    background: #9DB6CF;
+    border-style: none;
+    text-align: center;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    text-decoration: none;
+  }
+
+.button > a {
+    color: #F9F7F7;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.button:hover {
+    background-color: #AEA8C7;
+}
+
+.content {
+    width: 100%;
+}
+.content p {
+    color:#112D4E;
+    position: relative;
+    background-color: rgba(180, 169, 201, 0.25);
+    padding: 1.125em 1.5em;
+    font-size: 1.5em;
+    border-radius: 1rem;
+    box-shadow:	0 0.125rem 0.5rem rgba(71, 71, 99, .05), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+    line-height: 1.7em;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+.content p::before {
+
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	bottom: 100%;
+	left: 1.5em;
+	border: .75rem solid transparent;
+	border-top: none;
+	border-bottom-color: rgba(180, 169, 201, 0.25);
+	filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.05)); 
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.content .end {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.content .long {
+    font-size: 1.2rem;
+}

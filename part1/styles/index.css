@@ -1,0 +1,128 @@
+body {
+    text-align: left;
+    background-color: #e4f0f7;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1rem;
+    color: #112D4E;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #9DB6CF;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+  .container {
+    box-sizing: border-box;
+    padding-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 98%;
+  }
+
+  .content > p{
+    font-size: 1.5rem;
+    
+  }
+  
+  .body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .heading {
+    padding-left: 2rem;
+  }
+
+  .heading > ul > li{
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .heading > ul > li .nested{
+    margin: 1.2rem;
+    list-style-type: none;
+  }
+  
+  .button {
+    border-radius: 0.5rem;
+    width: 12rem;
+    height: 3rem;
+    box-sizing: border-box;
+    background: #9DB6CF;
+    border-style: none;
+    padding-top: 0.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .button a {
+    text-decoration: none;
+    color: #F9F7F7;
+    font-weight: bold;
+  } 
+
+  .button:hover {
+    background-color: #AEA8C7;
+  }
+
+p {
+
+    position: relative;
+    background-color: rgba(180, 169, 201, 0.25);
+    padding: 1.125em 1.5em;
+    font-size: 1.25em;
+    border-radius: 1rem;
+    box-shadow:	0 0.125rem 0.5rem rgba(71, 71, 99, .05), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2); 
+}
+
+p::before {
+
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	bottom: 100%;
+	left: 1.5em;
+	border: .75rem solid transparent;
+	border-top: none;
+
+	border-bottom-color: rgba(180, 169, 201, 0.25);
+	filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.05)); 
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+@media (min-height: 800px) {
+  .heading > ul > li{
+    margin: 2rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .heading > ul > li .nested{
+    margin: 1.5rem;
+    list-style-type: none;
+    line-height: 2rem;
+  }
+
+  .container {
+    margin-top: 2rem;
+  }
+}
